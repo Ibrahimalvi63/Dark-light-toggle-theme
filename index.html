@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme change</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="theme-changer">
+        <img src="image/sun.jpg" id="icon" />
+      </div>
+    </div>
+    <div class="container">
+      <h1><i>Stopwatch</i></h1>
+      <h2 id="display">00:00:00</h2>
+      <div class="buttons">
+        <button id="stop" onclick="stopWatch()">
+          <i class="fa-solid fa-stop"></i>
+        </button>
+        <button id="start" onclick="startWatch()">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="reset" onclick="resetWatch()">
+          <i class="fa-solid fa-rotate-left"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
